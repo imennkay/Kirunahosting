@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: url(bakgrund.jpg);
+  background-size: cover;
+}
+
+.title {
+  margin-top: 100px;
+  color: rgb(128, 128, 128);
+}
+
+.title.h1 {
+  font-size: 32px;
+  line-height: 10px;
+}
+
+.title.h2 {
+  font-size: 16px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  color: rgb(96, 40, 69);
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background-color: rgb(6, 31, 6);
+  border-color: transparent;
+  color: rgb(255, 248, 248);
+  font-size: 20px;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  /* Gör knappen transparent */
+  filter: alpha(opacity=50);
+  -moz-opacity: -50;
+  opacity: 0.5;
+}
+
+form .submit:hover {
+  background-color: rgb(19, 72, 19);
+  cursor: pointer;
+}

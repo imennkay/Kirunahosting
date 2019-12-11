@@ -1,0 +1,27 @@
+{
+  "name": "gruppkiruna",
+  "version": "1.0.0",
+  "description": "Grupparbete",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-cli": "^2.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielSoderberg/gruppinl-ming_WIE19.git"
+  },
+  "author": "Felix Hultberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielSoderberg/gruppinl-ming_WIE19/issues"
+  },
+  "homepage": "https://github.com/DanielSoderberg/gruppinl-ming_WIE19#readme"
+}

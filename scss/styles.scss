@@ -1,0 +1,18 @@
+//! This file should only contain imports
+// abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+// components
+@import "./components/buttons";
+
+// layout
+@import "./layout/footer";
+@import "./layout/header";
+
+// pages
+@import "./pages/index";
+@import "./pages/faktura";
+@import "./pages/kontakt";
+@import "./pages/tjanster";
+@import "./pages/kassa";
