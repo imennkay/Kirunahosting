@@ -1,3 +1,19 @@
+* {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
 .servicesidan-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(/Images/bakgrund.jpg);
@@ -26,6 +42,9 @@
     color: $color-primary;
   }
 
+  ul li {
+    list-style: none;
+  }
   ul li strong {
     color: $color-primary;
   }
@@ -41,13 +60,6 @@
 
 .secondary-color {
   color: $color-primary;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
 }
 
 .content-title {
@@ -82,110 +94,64 @@ h6 {
 
 .table {
   background: $color-primary-light;
-
   padding: 50px 20px 50px 20px;
   font-family: "Montserrat", sans-serif;
   position: relative;
   overflow: hidden;
-  box-shadow: 15px 15px 0px -4px rgba(49, 49, 49, 0.486);
+  box-shadow: 15px 15px 0px -4px rgba(255, 255, 255, 0.486);
   border-radius: 20px;
-}
 
-.table h2 {
-  text-transform: uppercase;
-  color: $color-primary-red;
-}
+  h2 {
+    text-transform: uppercase;
+    color: $color-primary-red;
+  }
 
-.price span h3 {
-  font-size: 1.5rem;
-  color: $color-primary-dark;
-}
+  ul {
+    margin: 10%;
+    padding: 0;
+  }
 
-.table ul {
-  margin: 0;
-  padding: 0;
-}
+  ul li {
+    padding: 10px 0;
+    list-style: none;
+    color: black;
+    margin-left: 25%;
+    margin-bottom: 2%;
+    text-align: left;
 
-.table ul li {
-  padding: 10px 0;
-  list-style: none;
-  color: black;
-  margin-left: 30%;
-  margin-bottom: 2%;
-  text-align: left;
-}
+    .fas {
+      color: $color-primary;
+    }
+  }
 
-.price {
-  font-size: 6rem;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  font-family: Impact, sans-serif;
-  color: #34403a;
-}
+  .bigseller {
+    background: $color-primary;
+    color: $color-primary-light;
+    transform: rotate(45deg);
+    position: absolute;
+    padding: 8px 38px;
+    top: 16px;
+    right: -36px;
+  }
 
-.price span {
-  display: block;
-  font-size: 1rem;
-  text-transform: lowercase;
-}
+  .price {
+    font-size: 6rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: Impact, sans-serif;
+    color: #34403a;
 
-.table a {
-  text-decoration: none;
-  display: block;
-  color: #2c3e50;
-  border: 2px solid #00c900;
-  padding: 10px 0;
-  margin: 10px 0;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  transition: 0.5s linear;
-  border-radius: 25px;
-}
+    p {
+      font-size: 2rem;
+      color: $color-primary-dark;
+    }
 
-.fas {
-  color: #00c900;
-}
-
-.table a:hover {
-  background: $color-primary;
-  color: #fff;
-}
-
-.bigseller {
-  background: $color-primary;
-  color: $color-primary-light;
-  transform: rotate(45deg);
-  position: absolute;
-  padding: 8px 38px;
-  top: 16px;
-  right: -36px;
-}
-
-/*Rutor till övriga tjänster*/
-.serviceboxes {
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: auto;
-  padding: 3rem;
-}
-
-.servicebox {
-  display: grid;
-  grid-template-columns: 100px auto;
-  grid-template-rows: 20px 60px;
-  background: $color-primary-dark;
-  height: 100px;
-  text-align: center;
-  font-size: 1.5rem;
-  border-radius: 20px;
-  color: rgb(163, 163, 163);
-  padding: 1.2rem 2rem;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-}
-
-.servicebox i {
-  color: $color-primary-black;
+    span {
+      display: block;
+      font-size: 1rem;
+      text-transform: lowercase;
+    }
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -198,24 +164,6 @@ h6 {
   .col {
     flex: 100%;
   }
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 1em 0;
-}
-
-p {
-  margin: 0;
-  padding: 1em 0;
 }
 
 /* Header tjänster */
@@ -277,6 +225,10 @@ p {
     grid-column-end: 2;
     text-align: left;
     color: $color-primary-light;
+    text-align: justify;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    line-height: 2;
     font-size: 2rem;
     background: $color-primary-dark;
     box-shadow: 23px 23px 26px 0px rgba(0, 0, 0, 1);
@@ -333,57 +285,90 @@ p {
 }
 
 /* Section D / Boxes */
-#section-d .box {
-  padding: 2em;
-  color: #fff;
-}
 
 #section-d .box:first-child {
-  border: 15px solid $color-primary-dark;
+  border: 15px solid $color-primary-black;
   background: #929292;
-  font-size: 2rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.637)),
+  font-size: 4rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.918), rgba(129, 255, 91, 0.911)),
     url(/Images/laptop2.jpg);
   height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
+  .content-title {
+    color: $color-primary;
+  }
   ul {
+    list-style: none;
     text-align: left;
-    p{
-      font-size: 10rem;
+    margin: 5% 0 10% 10%;
+
+    li {
+      color: $color-primary-light;
+      margin-top: 6vh;
+    }
+
+    li i {
+      color: $color-primary;
+      border: 10px solid $color-primary-dark;
+      border-radius: 10px;
+      background-color: $color-primary-dark;
     }
   }
-
-  h2 {
-    color: $color-primary;
 }
-
-
 #section-d .box:last-child {
   border: 15px solid $color-primary-black;
   background: #929292;
-  font-size: 2rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.637)),
-    url(/Images/laptop.jpg);
+  font-size: 4rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(253, 41, 69, 0.842)),
+    url(/Images/laptop2.jpg);
+  height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
+  .content-title {
+    color: $color-primary-red;
+  }
+
   ul {
+    list-style: none;
     text-align: left;
+    margin: 5% 0 10% 10%;
+
+    li {
+      color: $color-primary-light;
+      margin-top: 6vh;
+    }
+
+    li i {
+      color: $color-primary-red;
+      border: 10px solid $color-primary-light;
+      border-radius: 10px;
+      background-color: $color-primary-light;
+    }
   }
 }
 
-#section-d .box:last-child h2 {
-  color: $color-primary;
-}
-
 .content-wrap-2 {
-  background: #fff;
-  color: #333;
+  background: $color-primary-black;
+  color: $color-primary-light;
   padding: 5em;
+  h2 {
+    text-transform: uppercase;
+  }
+  strong {
+    color: $color-primary-red;
+  }
+
+  p {
+    text-align: justify;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 2;
+  }
 }
 
 #main-footerr a {
@@ -424,155 +409,9 @@ p {
     grid-template-columns: 100%;
     grid-row-gap: 2%;
   }
-}
 
-/* Beställningsinfo kassasidan*/
-.kassa-container {
-  width: 100%;
-  display: grid;
-  grid-template-rows: auto 200px auto auto auto;
-  grid-template-columns: minmax(160px 160px 160px auto);
-  grid-gap: 20px;
-  background-color: rgb(212, 247, 160);
-  padding: 30px;
-  height: 150vh;
-  margin-top: 70px;
-
-  grid-template-areas:
-    "order order order side"
-    "offer-1 offer-2 offer-3 side"
-    "offerings offerings offerings side"
-    "offerings offerings offerings side"
-    "foot foot foot side";
-}
-
-.orderbox {
-  grid-area: order;
-  grid-template-columns: 150px auto 100px;
-  background-color: rgb(233, 174, 13);
-  color: black;
-  padding: 10px;
-  min-height: 200px;
-}
-
-.orderlist {
-  grid-area: order;
-  color: black;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-}
-
-.pricebar {
-  grid-area: side;
-  background-color: rgba(5, 114, 2, 0.678);
-  padding: 10px;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-}
-
-.offerbox-1 {
-  grid-area: offer-1;
-  background-color: #00c900;
-  padding: 10px;
-  min-height: 160;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  line-height: 0.7;
-  text-transform: uppercase;
-}
-.offerbox-2 {
-  grid-area: offer-2;
-  background-color: rgba(205, 247, 204, 0.89);
-  padding: 10px;
-  min-height: 160;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  line-height: 0.7;
-  text-transform: uppercase;
-}
-.offerbox-3 {
-  grid-area: offer-3;
-  background-color: #00c900;
-  padding: 10px;
-  min-height: 160;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  line-height: 0.7;
-  text-transform: uppercase;
-}
-.offerbox i {
-  color: #8eee8e;
-}
-
-.offerbox-1:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  background-color: rgba(205, 247, 204, 0.89);
-}
-
-.offerbox-2:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  background-color: #555455;
-}
-.offerbox-3:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  background-color: rgba(205, 247, 204, 0.89);
-}
-
-.delete-order-btn {
-  text-decoration: none;
-  display: block;
-  background-color: black;
-  color: white;
-  padding: 10px 0;
-  margin: auto;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  transition: 0.5s linear;
-  width: 30%;
-  cursor: pointer;
-}
-
-.offer-price {
-  font-size: 1.5rem;
-  align-content: center;
-  font-family: Impact, sans-serif;
-  color: #787e7b;
-}
-.offer-pg {
-  font-size: 1rem;
-  align-content: center;
-  color: black;
-  text-transform: uppercase;
-}
-
-.kassaorder {
-  list-style: none;
-  color: black;
-}
-
-/*Rutor för att kryssa i extratjänster*/
-.offerings {
-  grid-area: offerings;
-  display: grid;
-  grid-template-rows: 50px 50px 50px;
-  background-color: rgba(187, 248, 187, 0.89);
-  padding: 10px;
-  border-radius: 4px;
-  font-size: 1.3rem;
-}
-.offerings-rows {
-  grid-gap: 10px;
-  background-color: rgb(190, 190, 190);
-  border-radius: 3px;
-  justify-content: right;
-  padding: 5px;
+  .content-wrap-1 {
+    box-shadow: none;
+    margin-right: 0%;
+  }
 }

@@ -1,59 +1,136 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  text-align: center;
-  background: url(bakgrund.jpg);
+  font-family: "montserrat", sans-serif;
+}
+
+.contact-section {
+  background: url("/Images/grund.jpg");
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-top: 10px;
 }
 
-.title {
-  margin-top: 100px;
-  color: rgb(128, 128, 128);
+.contact-section h1 {
+  margin-top: 5%;
+  text-align: center;
+  color: #ddd;
 }
 
-.title.h1 {
-  font-size: 32px;
-  line-height: 10px;
+.border_1 {
+  width: 100px;
+  height: 10px;
+  background: #00c900;
+  margin: 40px auto;
 }
 
-.title.h2 {
-  font-size: 16px;
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
 }
 
-form {
-  margin-top: 50px;
-}
-
-.form-control {
-  width: 600px;
-  background: transparent;
-  border: none;
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 16px 0;
+  border: 0;
+  background: rgb(36, 35, 35);
+  padding: 20px 40px;
   outline: none;
-  border-bottom: 1px solid rgb(128, 128, 128);
-  color: rgb(96, 40, 69);
-  font-size: 18px;
-  margin-bottom: 16px;
+  color: #ddd;
+  transition: 0.5s;
 }
 
-input {
-  height: 45px;
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #00c900;
 }
 
-form .submit {
-  background-color: rgb(6, 31, 6);
-  border-color: transparent;
-  color: rgb(255, 248, 248);
-  font-size: 20px;
-  letter-spacing: 2px;
-  height: 50px;
-  margin-top: 20px;
-  /* Gör knappen transparent */
-  filter: alpha(opacity=50);
-  -moz-opacity: -50;
-  opacity: 0.5;
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
 }
 
-form .submit:hover {
-  background-color: rgb(19, 72, 19);
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: #00c900;
+  color: #ddd;
+  padding: 12px 50px;
+  border-radius: 20px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact-form-btn:hover {
+  background: #028802;
+}
+
+.social-menu ul {
+  margin-top: 5%;
+  position: relative;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fab {
+  margin-bottom: 10%;
+  font-size: 30px;
+  line-height: 60px;
+  transition: 0.6s;
+  color: rgb(0, 0, 0);
+}
+
+.social-menu ul li .fab:hover {
+  color: #fff;
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  bottom: 12px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(226, 215, 215);
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-menu ul li a:hover {
+  transform: translate(0, -10px);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #55acee;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #e4405f;
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #0077b5;
+}
+
+@media (max-width: 500px) {
+  .social-menu ul li .fab {
+    grid-template-columns: 1fr;
+  }
 }

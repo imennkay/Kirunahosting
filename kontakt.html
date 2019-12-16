@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="" />
-    <title>Document</title>
+    <title>Grupp Kiruna</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -21,55 +21,57 @@
           <img class="brand" src="images/logo2.png" alt="logo" />
           <ul>
             <li><a href="index.html">Hem</a></li>
-            <li><a href="tjanster.html">Tjänster</a></li>
-            <li><a href="#">Info</a></li>
+            <li><a href="#main">Tjänster</a></li>
+            <li><a href="info/index.html">Info</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <div class="title">
-      <h1>Kontakta oss</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quasi
-        non ad, dicta minus veritatis? <br />
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae,
-        provident!
-      </p>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contact</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="hej.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="contact-section">
+
+        <h1>Kontakta oss</h1>
+        <div class="border_1"></div>
+        <form class="contact-form" action="index.html" method="post">
+            <input type="text" class="contact-form-text" placeholder="Ditt namn">
+            <input type="email" class="contact-form-text" placeholder="Din email">
+            <input type="number" class="contact-form-text" placeholder="Ditt telefonnummer"><br>
+            <textarea class="contact-form-text" placeholder="Skriv ditt meddelande här"></textarea>
+            <input type="Submit" class="contact-form-btn" value="send">
+        </form>
+
+
+        <div class="social-menu">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+
     </div>
-    <div class="box">
-      <form>
-        <input
-          type="Text"
-          name="Namn"
-          class="form-control"
-          placeholder="Skriv din text här"
-          required
-        /><br />
-        <input
-          type="email"
-          name="email"
-          class="form-control"
-          placeholder="Skriv din e-mail här"
-          required
-        /><br />
-        <textarea
-          name="message"
-          class="form-control"
-          placeholder="message"
-          rows="4"
-          required
-        ></textarea
-        ><br />
-        <input
-          type="Submit"
-          namne=""
-          class="form-control submit"
-          value="Sänd meddelandet"
-        />
-      </form>
-    </div>
+
+
+
+</body>
 
     <!-- footer -->
     <footer class="footer-distributed">
@@ -117,5 +119,6 @@
         </p>
       </div>
     </footer>
+    <script src="/Js/index.js"></script>
   </body>
 </html>
